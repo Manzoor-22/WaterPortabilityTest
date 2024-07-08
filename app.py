@@ -24,6 +24,14 @@ def form():
 def info():
     return render_template('info.html')
 
+@app.route('/Aboutus')
+def about():
+    return render_template("About.html")
+
+@app.route('/diseases')
+def disease():
+    return render_template("disease.html")
+
 # @app.route('/submit', methods=['POST'])
 # def submit():
 #     ph = request.form['ph']
